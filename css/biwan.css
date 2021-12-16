@@ -1,0 +1,144 @@
+/* Color pallete used: https://www.schemecolor.com/dark-wood-gradient.php */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Var declaration */
+:root{
+    --brown: #705548;
+    --browner: #675045;
+    --brownest: #5F4B43;
+    --brownester: #564540;
+    --brownestertest: #4E403E;
+    --brownestertestter: #453B3B;
+    --glossyblack: #252324;
+    
+}
+/* Global */
+body{
+    background: var(--brown);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Start of header css */
+header{
+    height: auto;
+    width: 100vw;
+    background: var(--brownestertest);
+    padding: 20px;
+}
+.play-title{
+    user-select: none;
+}
+.biwan-button{
+    background: var(--brownestertestter);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: turquoise;
+    transition: all .3s ease;
+}
+.biwan-button:hover{
+    color: var(--glossyblack);
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-list{
+    list-style: none;
+}
+.nav-bar-list li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.nav-bar-list li a{
+    transition: all .3s ease;
+    text-decoration: underline;
+    color: black;
+}
+.nav-bar-list li a:hover{
+    color: var(--glossyblack);
+}
+/* End of header CSS */
+
+/* Start of main CSS */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    height: auto;
+    width: 60vw;
+    margin-left: 25vw;
+}
+.actual-image{
+    height: auto;
+    width: 20vw;
+    border-radius: 5px;
+}
+.my-image-wrapper{
+    margin-right: 10px;
+}
+.about-me{
+    height: auto;
+    width: 100%;
+    display: flex;
+    background: var(--browner);
+    padding: 20px;
+}
+.about-me-text{
+    text-align: justify;
+}
+.about-me-text p{
+    margin-top: 5px;
+    text-indent: 20px;
+}
+/* End of main CSS */
+
+/* Start of footer CSS */
+footer{
+    height: auto;
+    width: 100vw;
+    /* remove this when main takes whole screen. */
+    position: absolute;
+    bottom: 0;
+}
+.upper-footer{
+    background: var(--brownestertest);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+.upper-footer h2{
+    text-decoration: underline;
+}
+.upper-footer p{
+    font-size: 13px;
+}
+.socials{
+    list-style: none;
+}
+.socials li{
+    display: inline-block;
+    padding: 10px 3px;
+}
+.socials li a{
+    color: black;
+    transition: all .3s ease;
+}
+.socials li a:hover{
+    color: var(--glossyblack);
+}
+.lower-footer{
+    background: var(--brownestertestter);
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+/* End of footer CSS */
